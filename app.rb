@@ -6,6 +6,10 @@ require_relative "db/connection"
 
 require_relative "models/pokemon"
 
+get '/' do
+  erb :"home"
+end
+
 get '/pokemon' do
   @pokemons = Pokemon.all
   erb :"pokemon/index"

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pokenatra - Sinatra backed Pokemon app!</title>
+    <link rel="stylesheet" href="/css/pokestyle.css">
+  </head>
+  <body>
+    <nav>
+      <img src="/images/logo.png" alt="Pokenatra logo">
+      <ul>
+        <li><a href="/pokemon">Pokedex</a></li>
+        <li><a href="#">Trainers</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <%= yield %>
+    </main>
+
+  </body>
+</html>

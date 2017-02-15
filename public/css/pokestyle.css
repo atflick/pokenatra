@@ -1,6 +1,8 @@
-/*
+* {
+  margin: 0;
+  padding: 0;
+}
 
-Uncomment for sick pokestyle
 
 @font-face {
   font-family: "Pokemon";
@@ -16,22 +18,67 @@ a, p, h2, h3 {
 }
 
 
+nav {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  background-color: red;
+  height: 100px;
+  top: 0;
+  left: 0;
+}
+
+img {
+  display: inline;
+  height: 100px;
+}
+
+
+ul, li {
+  text-decoration: none;
+  display: inline;
+
+}
+
+li {
+  position: relative;
+  top: -30px;
+  line-height: 100px;
+}
+
 body {
   background-image: url(../images/pokedex.png);
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-position: bottom;
   font-family: "Pokemon", monospace;
   letter-spacing: .25em;
   font-size: 200%;
+
+}
+
+form {
+  background: white;
+  text-align: right;
+}
+form > input {
+height: 50px;
+font-size: 40px;
+}
+main {
+  max-width: 800px;
+  text-align: center;
+  margin: 110px auto;
 }
 
 a:hover {
   padding: 20px;
   animation: pulse 1s infinite;
+  cursor: pointer;
 }
 .containareon, h1 {
   box-sizing: border-box;
-  padding: 10px;
+  padding: 20px;
   width: 50%;
   margin: auto;
   background-color: rgba(255, 255, 255, .8);
@@ -70,4 +117,4 @@ a:hover {
     text-shadow: 4px 4px 3px rgba(255, 0, 0, .3);
     background-color: rgba(0, 0, 0, .1);
   }
-}*/
+}
